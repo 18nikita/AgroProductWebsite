@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 100px;
+}
+#navbar ul{
+    display: flex;
+    padding-left: 8rem;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 0.8rem;
+}
+#navbar ul li a:hover{
+    background: black;
+    color: whitesmoke;
+    border-radius: 10rem;
+}
+.btn{
+    background-color: rgb(233, 166, 21);
+    color: whitesmoke;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(237, 241, 219);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5.2rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* carousal */
+.container{
+    background: url(farm.jpg)no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+#first{
+    background-color: red;
+    margin: 0.5rem;
+}
+#second{
+    background-color: rgb(233, 166, 21);
+    margin: 0.5rem;
+}
+#third{
+    background-color: green;
+    margin: 0.5rem;
+}
+.carousal{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 25rem;
+    left: 28rem;
+}
+/* Services */
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 4rem;
+    position: relative;
+}
+.services .box{
+    width: 80%;
+    margin: 3rem;
+    border: 2px solid black;
+}
+.services .box img{
+    width: 100%;
+}
+.services .box .content{
+    padding: 1.5rem;
+}
+.services .box .content p{
+    margin-top: 1.2rem;
+}
+
+/* footer */
+.footer{
+    margin-left: 3rem;
+    background-color: rgb(237, 241, 219);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.footer .column{
+    padding: 5rem;
+}
